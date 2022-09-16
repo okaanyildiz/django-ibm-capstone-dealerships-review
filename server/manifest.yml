@@ -1,11 +1,11 @@
-  applications:
-  - name: djangoapp
+applications:
+  - name: dealership-reviews-ozi
     routes:
-      - route: $HOST.$DOMAIN
+      - route: dealership-reviews-ozi.eu-gb.cf.appdomain.cloud
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: dealership-reviews-ozi-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: dealership-reviews-ozi.eu-gb.cf.appdomain.cloud/static
     memory: 128M
     buildpack: staticfile_buildpack
